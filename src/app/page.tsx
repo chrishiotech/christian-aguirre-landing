@@ -1,6 +1,3 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-
 import HeroPrimary from "../sections/HeroPrimary";
 import ValueProposition from "../sections/ValueProposition";
 import CapabilitiesServices from "../sections/CapabilitiesServices";
@@ -13,8 +10,6 @@ import FooterContextual from "../sections/FooterContextual";
 export default function Home() {
   return (
     <>
-      <Header />
-
       <HeroPrimary mode="authority" />
       <ValueProposition mode="clarity" />
       <CapabilitiesServices mode="confidence" />
@@ -23,8 +18,6 @@ export default function Home() {
       <DifferentiatorsPhilosophy mode="alignment" />
       <CTAPrimary mode="conversion" />
       <FooterContextual mode="closure" />
-
-      <Footer />
     </>
   );
 }
