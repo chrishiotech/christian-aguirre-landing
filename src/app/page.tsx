@@ -1,65 +1,82 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="min-h-screen p-8">
+      <div className="max-w-6xl mx-auto">
+        <h1 className="text-4xl font-bold mb-4">Christian Aguirre</h1>
+        <h2 className="text-2xl text-gray-600 mb-8">Remote Frontend Architect & AI Automation</h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="border rounded-lg p-6">
+            <div className="text-3xl mb-2">🏗️</div>
+            <h3 className="text-xl font-bold mb-2">Arquitecto Frontend</h3>
+            <p className="text-gray-600">MicroFrontends, escalabilidad, performance</p>
+          </div>
+          
+          <div className="border rounded-lg p-6">
+            <div className="text-3xl mb-2">🎯</div>
+            <h3 className="text-xl font-bold mb-2">Consultor Técnico</h3>
+            <p className="text-gray-600">Piloto Cancelable, ROI PYMEs</p>
+          </div>
+          
+          <div className="border rounded-lg p-6">
+            <div className="text-3xl mb-2">👥</div>
+            <h3 className="text-xl font-bold mb-2">Líder Técnico</h3>
+            <p className="text-gray-600">Escalado equipos, mentoría</p>
+          </div>
+          
+          <div className="border rounded-lg p-6">
+            <div className="text-3xl mb-2">🤖</div>
+            <h3 className="text-xl font-bold mb-2">Especialista en IA</h3>
+            <p className="text-gray-600">DeepSeek/Minimax, ahorro 60% vs GPT-4</p>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        
+        <div className="mb-12">
+          <h3 className="text-2xl font-bold mb-4">Logros Cuantificables</h3>
+          <div className="flex space-x-8">
+            <div className="text-center">
+              <div className="text-3xl font-bold text-blue-600">-66%</div>
+              <div className="text-gray-600">Build Time</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-green-600">+40%</div>
+              <div className="text-gray-600">Core Web Vitals</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-red-600">-75%</div>
+              <div className="text-gray-600">Trabajo Manual</div>
+            </div>
+          </div>
         </div>
-      </main>
-    </div>
+        
+        <div className="mb-12">
+          <h3 className="text-2xl font-bold mb-4">Stack Tecnológico</h3>
+          <div className="flex flex-wrap gap-2">
+            {['React', 'Angular', 'TypeScript', 'Next.js', 'Tailwind', 'Vercel', 
+              'MicroFrontends', 'Module Federation', 'DeepSeek', 'Minimax', 
+              'AWS', 'GitHub Actions', 'Docker', 'Terraform'].map((tech) => (
+              <span key={tech} className="bg-gray-100 px-3 py-1 rounded-full text-sm">
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+        
+        <div className="text-center">
+          <a 
+            href="https://github.com/chrishiotech/technical-portfolio" 
+            target="_blank"
+            className="inline-block bg-black text-white px-6 py-3 rounded-lg font-bold hover:bg-gray-800 transition"
+          >
+            Ver Portafolio Técnico
+          </a>
+          <div className="mt-4 flex justify-center space-x-4">
+            <a href="https://linkedin.com/in/christian-aguirre" className="text-gray-600 hover:text-black">LinkedIn</a>
+            <a href="https://github.com/chrishiotech" className="text-gray-600 hover:text-black">GitHub</a>
+            <a href="mailto:christian@aguirre.dev" className="text-gray-600 hover:text-black">Email</a>
+          </div>
+        </div>
+      </div>
+    </main>
   );
 }
