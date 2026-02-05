@@ -1,15 +1,22 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-jetbrains',
+})
 
 export const metadata: Metadata = {
   title: 'Christian Aguirre - Remote Frontend Architect & AI Automation',
-  description: 'Presentación unificada de mis 4 dimensiones profesionales: Arquitecto Frontend, Consultor Técnico, Líder Técnico y Especialista en IA.',
-  keywords: 'Frontend Architect, AI Automation, Technical Consultant, Tech Lead, MicroFrontends, React, Angular, Next.js',
+  description: 'Arquitecto Frontend especializado en MicroFrontends, consultoría técnica con metodología Piloto Cancelable e implementaciones de IA de bajo costo.',
 }
 
 export default function RootLayout({
@@ -18,12 +25,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es" className="scroll-smooth">
-      <body className={`${inter.className} bg-white text-gray-900 antialiased`}>
+    <html lang="es" className={`${inter.variable} ${jetbrainsMono.variable}`}>
+      <body className="font-sans antialiased">
         <Header />
-        <main className="min-h-screen">
-          {children}
-        </main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

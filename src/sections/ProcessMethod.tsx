@@ -1,8 +1,8 @@
 type SectionProps = { mode: string };
 
-export default function ProcessMethod({ mode }: SectionProps) {
+export default function ProcessMethod() {
   return (
-    <section data-section="process-method" data-mode={mode}>
+    <section data-section="process-method">
       <header>
         <h2>ProcessMethod</h2>
       </header>

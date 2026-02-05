@@ -10,14 +10,14 @@ import FooterContextual from "../sections/FooterContextual";
 export default function Home() {
   return (
     <>
-      <HeroPrimary mode="authority" />
-      <ValueProposition mode="clarity" />
-      <CapabilitiesServices mode="confidence" />
-      <ProcessMethod mode="trust" />
-      <ProofPortfolio mode="credibility" />
-      <DifferentiatorsPhilosophy mode="alignment" />
-      <CTAPrimary mode="conversion" />
-      <FooterContextual mode="closure" />
+      <HeroPrimary />
+      <ValueProposition />
+      <CapabilitiesServices />
+      <ProcessMethod />
+      <ProofPortfolio />
+      <DifferentiatorsPhilosophy />
+      <CTAPrimary />
+      <FooterContextual />
     </>
   );
 }

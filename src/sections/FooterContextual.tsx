@@ -1,8 +1,8 @@
 type SectionProps = { mode: string };
 
-export default function FooterContextual({ mode }: SectionProps) {
+export default function FooterContextual() {
   return (
-    <section data-section="footer-contextual" data-mode={mode}>
+    <section data-section="footer-contextual">
       <header>
         <h2>FooterContextual</h2>
       </header>
