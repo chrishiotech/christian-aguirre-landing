@@ -8,16 +8,16 @@ import CTAPrimary from "../sections/CTAPrimary";
 import FooterContextual from "../sections/FooterContextual";
 
 export default function Home() {
-  return (
-    <>
-      <HeroPrimary />
-      <ValueProposition />
-      <CapabilitiesServices />
-      <ProcessMethod />
-      <ProofPortfolio />
-      <DifferentiatorsPhilosophy />
-      <CTAPrimary />
-      <FooterContextual />
-    </>
-  );
+	return (
+		<>
+			<HeroPrimary />
+			<ValueProposition />
+			<CapabilitiesServices />
+			<ProcessMethod />
+			<ProofPortfolio />
+			<DifferentiatorsPhilosophy />
+			<CTAPrimary />
+			<FooterContextual />
+		</>
+	);
 }
