@@ -45,10 +45,10 @@ export default function ProofPortfolio() {
 	];
 
 	// Estado para manejar la pestaña activa de cada proyecto
-	const [activeTabs, setActiveTabs] = useState({});
+	const [activeTabs, setActiveTabs] = useState<Record<number, 'business' | 'technical'>>({});
 
-	const toggleTab = (projectId, tabType) => {
-		setActiveTabs(prev => ({
+	const toggleTab = (projectId: number, tabType: 'business' | 'technical') => {
+			setActiveTabs(prev => ({
 			...prev,
 			[projectId]: tabType
 		}));
