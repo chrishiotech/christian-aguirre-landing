@@ -6,7 +6,7 @@ export default function CTAPrimary() {
 					Hablemos de tu siguiente entrega crítica
 				</h2>
 				<a
-					href="mailto:contacto@christianaguirre.dev"
+					href="mailto:christian8.aguirre@gmail.com"
 					className="inline-flex items-center justify-center px-10 py-4 bg-white text-primary font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition"
 				>
 					Agendar una llamada
