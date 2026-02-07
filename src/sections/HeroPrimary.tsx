@@ -1,62 +1,52 @@
 export default function HeroPrimary() {
-	return (
-		<section className="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-gradient-to-b from-gray-50 to-white animate-fade-up">
-			<div className="mb-10">
-				<div className="text-5xl font-bold text-gray-900 mb-2">
-					Christian Aguirre
-				</div>
-				<div className="text-2xl text-primary font-semibold">
-					Senior Frontend Architect & AI Automation
-				</div>
-				<div className="mt-3 text-sm uppercase tracking-[0.2em] text-gray-500">
-					Acapulco, México · 8+ años · Remoto
-				</div>
-			</div>
+  return (
+    <section className="animate-fade-up flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-gray-50 to-white px-6 text-center">
+      <div className="mb-10">
+        <div className="mb-2 text-5xl font-bold text-gray-900">Christian Aguirre</div>
+        <div className="text-2xl font-semibold text-primary">
+          Senior Frontend Architect & AI Automation
+        </div>
+        <div className="mt-3 text-sm uppercase tracking-[0.2em] text-gray-500">
+          Acapulco, México · 8+ años · Remoto
+        </div>
+      </div>
 
-			<h1 className="text-6xl font-bold text-gray-900 mb-6 leading-tight">
-				Arquitectura Frontend Escalable
-				<span className="block text-primary">con IA de Bajo Costo</span>
-			</h1>
+      <h1 className="mb-6 text-6xl font-bold leading-tight text-gray-900">
+        Arquitectura Frontend Escalable
+        <span className="block text-primary">con IA de Bajo Costo</span>
+      </h1>
 
-			<p className="text-xl text-gray-700 max-w-2xl mb-12">
-				Construyo sistemas frontend para equipos en crecimiento y automatizo
-				procesos repetitivos con IA.
-			</p>
+      <p className="mb-12 max-w-2xl text-xl text-gray-700">
+        Construyo sistemas frontend para equipos en crecimiento y automatizo procesos repetitivos
+        con IA.
+      </p>
 
-			{/* CTAs */}
-			<div className="flex flex-col sm:flex-row gap-4 mb-16">
-				<a
-					href="#portfolio"
-					className="px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition shadow-lg"
-				>
-					Ver Portafolio Técnico (4 Proyectos)
-				</a>
-				<a
-					href="#contact"
-					className="px-8 py-4 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-gray-50 transition"
-				>
-					Contactar para Consultoría
-				</a>
-			</div>
+      {/* CTAs */}
+      <div className="mb-16 flex flex-col gap-4 sm:flex-row">
+        <a
+          href="#portfolio"
+          className="rounded-lg bg-primary px-8 py-4 font-semibold text-white shadow-lg transition hover:bg-primary-dark"
+        >
+          Ver Portafolio Técnico (4 Proyectos)
+        </a>
+        <a
+          href="#contact"
+          className="rounded-lg border-2 border-primary px-8 py-4 font-semibold text-primary transition hover:bg-gray-50"
+        >
+          Contactar para Consultoría
+        </a>
+      </div>
 
-			{/* Stack rápido */}
-			<div className="flex flex-wrap justify-center gap-3 mb-8">
-				{[
-					"React",
-					"Next.js 14",
-					"Angular 17",
-					"MicroFrontends",
-					"TypeScript",
-					"AI Pipelines",
-				].map((tech) => (
-					<span
-						key={tech}
-						className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm"
-					>
-						{tech}
-					</span>
-				))}
-			</div>
-		</section>
-	);
+      {/* Stack rápido */}
+      <div className="mb-8 flex flex-wrap justify-center gap-3">
+        {["React", "Next.js 14", "Angular 17", "MicroFrontends", "TypeScript", "AI Pipelines"].map(
+          (tech) => (
+            <span key={tech} className="rounded-full bg-gray-100 px-4 py-2 text-sm text-gray-700">
+              {tech}
+            </span>
+          )
+        )}
+      </div>
+    </section>
+  );
 }
