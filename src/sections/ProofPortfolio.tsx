@@ -18,6 +18,14 @@ export default function ProofPortfolio() {
 		},
 		{
 			id: 3,
+			name: "React Native Product App",
+			description:
+				"Aplicación móvil con arquitectura modular, navegación y estado predecible.",
+			tech: ["React Native", "TypeScript", "Testing Library"],
+			link: "https://github.com/chrishiotech/technical-portfolio/tree/main/03-react-native-app",
+		},
+		{
+			id: 4,
 			name: "AI Pipeline de Bajo Costo",
 			description: "Automatización con DeepSeek API y ahorro del 60% vs GPT-4.",
 			tech: ["Python", "DeepSeek API", "HTMX", "FastAPI"],
@@ -26,13 +34,16 @@ export default function ProofPortfolio() {
 	];
 
 	return (
-		<section id="portfolio" className="py-24 px-6 bg-white">
+		<section
+			id="portfolio"
+			className="py-24 px-6 bg-gradient-to-b from-white via-white to-gray-50"
+		>
 			<div className="max-w-6xl mx-auto">
 				<h2 className="text-4xl font-bold text-gray-900 text-center mb-4">
 					Portafolio Técnico
 				</h2>
 				<p className="text-xl text-gray-600 text-center mb-16">
-					5 proyectos ejecutables que demuestran mis habilidades técnicas
+					4 proyectos ejecutables que demuestran mis habilidades técnicas
 				</p>
 
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -76,7 +87,7 @@ export default function ProofPortfolio() {
 						rel="noopener noreferrer"
 						className="px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition inline-block"
 					>
-						Explorar los 5 Proyectos Completos
+						Explorar los 4 Proyectos Completos
 					</a>
 				</div>
 			</div>

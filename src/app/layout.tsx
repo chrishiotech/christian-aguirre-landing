@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Space_Grotesk, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const inter = Inter({
+const spaceGrotesk = Space_Grotesk({
 	subsets: ["latin"],
-	variable: "--font-inter",
+	weight: ["400", "500", "600", "700"],
+	variable: "--font-space-grotesk",
 });
 
-const jetbrainsMono = JetBrains_Mono({
+const ibmPlexMono = IBM_Plex_Mono({
 	subsets: ["latin"],
-	variable: "--font-jetbrains",
+	weight: ["400", "600"],
+	variable: "--font-ibm-plex-mono",
 });
 
 export const metadata: Metadata = {
@@ -26,7 +28,10 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="es" className={`${inter.variable} ${jetbrainsMono.variable}`}>
+		<html
+			lang="es"
+			className={`${spaceGrotesk.variable} ${ibmPlexMono.variable}`}
+		>
 			<body className="font-sans antialiased">
 				<Header />
 				<main>{children}</main>

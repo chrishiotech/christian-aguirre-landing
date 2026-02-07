@@ -31,8 +31,8 @@ const config: Config = {
         }
       },
       fontFamily: {
-        sans: ['var(--font-inter)'],
-        mono: ['var(--font-jetbrains)'],
+        sans: ['var(--font-space-grotesk)'],
+        mono: ['var(--font-ibm-plex-mono)'],
       },
     },
   },

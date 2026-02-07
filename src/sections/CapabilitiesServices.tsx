@@ -56,7 +56,7 @@ export default function CapabilitiesServices() {
 	];
 
 	return (
-		<section className="py-24 px-6 bg-white">
+		<section className="py-24 px-6 bg-gradient-to-b from-white via-white to-gray-50">
 			<div className="max-w-6xl mx-auto">
 				<h2 className="text-4xl font-bold text-gray-900 text-center mb-4">
 					Mis 4 Dimensiones Profesionales

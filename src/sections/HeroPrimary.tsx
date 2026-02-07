@@ -1,26 +1,26 @@
 export default function HeroPrimary() {
 	return (
-		<section className="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-gradient-to-b from-gray-50 to-white">
-			{/* Logo/Iniciales */}
-			<div className="mb-12">
+		<section className="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-gradient-to-b from-gray-50 to-white animate-fade-up">
+			<div className="mb-10">
 				<div className="text-5xl font-bold text-gray-900 mb-2">
 					Christian Aguirre
 				</div>
 				<div className="text-2xl text-primary font-semibold">
-					Remote Frontend Architect & AI Automation
+					Senior Frontend Architect & AI Automation
+				</div>
+				<div className="mt-3 text-sm uppercase tracking-[0.2em] text-gray-500">
+					Acapulco, México · 8+ años · Remoto
 				</div>
 			</div>
 
-			{/* Hero Text */}
 			<h1 className="text-6xl font-bold text-gray-900 mb-6 leading-tight">
-				Building Scalable Frontends
-				<span className="block text-primary">with AI Efficiency</span>
+				Arquitectura Frontend Escalable
+				<span className="block text-primary">con IA de Bajo Costo</span>
 			</h1>
 
 			<p className="text-xl text-gray-700 max-w-2xl mb-12">
-				8+ años diseñando arquitecturas frontend enterprise. Especializado en
-				MicroFrontends, automatización con IA de bajo costo y metodologías
-				ágiles para startups y empresas.
+				Construyo sistemas frontend para equipos en crecimiento y automatizo
+				procesos repetitivos con IA.
 			</p>
 
 			{/* CTAs */}
@@ -29,7 +29,7 @@ export default function HeroPrimary() {
 					href="#portfolio"
 					className="px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition shadow-lg"
 				>
-					Ver Portafolio Técnico (5 Proyectos)
+					Ver Portafolio Técnico (4 Proyectos)
 				</a>
 				<a
 					href="#contact"

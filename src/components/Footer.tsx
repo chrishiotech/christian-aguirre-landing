@@ -47,7 +47,7 @@ export default function Footer() {
 								<span>GitHub (Código Abierto)</span>
 							</a>
 							<a
-								href="mailto:tu-email@ejemplo.com"
+								href="mailto:contacto@christianaguirre.dev"
 								className="flex items-center gap-3 text-gray-300 hover:text-white transition"
 							>
 								<span className="text-lg">✉️</span>
