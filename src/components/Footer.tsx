@@ -51,7 +51,7 @@ export default function Footer() {
 								className="flex items-center gap-3 text-gray-300 hover:text-white transition"
 							>
 								<span className="text-lg">✉️</span>
-								<span>Email: contacto@christianaguirre.dev</span>
+								<span>Email: christian8.aguirre@gmail.com</span>
 							</a>
 						</div>
 					</div>
