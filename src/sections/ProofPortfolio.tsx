@@ -135,7 +135,7 @@ export default function ProofPortfolio() {
       <div className="mx-auto max-w-6xl">
         <h2 className="mb-4 text-center text-4xl font-bold text-gray-900">Portafolio Técnico</h2>
         <p className="mb-16 text-center text-xl text-gray-600">
-          4 proyectos ejecutables que demuestran mis habilidades técnicas y valor de negocio
+          8 proyectos ejecutables que demuestran mis habilidades técnicas y valor de negocio
         </p>
 
         <div className="mb-12 grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -263,7 +263,7 @@ export default function ProofPortfolio() {
               rel="noopener noreferrer"
               className="block transform rounded-lg bg-white px-10 py-4 font-semibold text-primary transition-all hover:-translate-y-1 hover:bg-gray-50"
             >
-              🚀 Explorar los 4 Proyectos Completos en GitHub
+              🚀 Explorar los 8 Proyectos Completos en GitHub
             </a>
           </div>
 
