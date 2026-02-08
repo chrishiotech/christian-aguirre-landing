@@ -18,7 +18,7 @@ export default function Footer() {
             </div>
 
             <p className="mb-8 max-w-md text-sm leading-relaxed text-slate-300 sm:text-base">
-              Especializado en arquitecturas frontend escalables, consultoría técnica con ROI
+              🎯 Especializado en arquitecturas frontend escalables, consultoría técnica con ROI
               medible e implementaciones de IA de bajo costo para empresas.
             </p>
           </div>
@@ -56,7 +56,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 border-t border-slate-600 pt-6 text-center text-slate-400 sm:mt-12 sm:pt-8">
+        <div className="mt-8 border-t border-slate-200 pt-6 text-center text-slate-200 sm:mt-12 sm:pt-8">
           <p className="text-sm sm:text-base">
             © {new Date().getFullYear()} Christian Aguirre. Todos los derechos reservados.
           </p>

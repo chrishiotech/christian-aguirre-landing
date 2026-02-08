@@ -19,19 +19,23 @@ export default function Header() {
 
         {/* Navigation */}
         <div className="hidden items-center gap-8 md:flex">
-          <a href="#portfolio" className="font-medium text-gray-700 hover:text-primary">
-            Portafolio
-          </a>
-          <a href="#contact" className="font-medium text-gray-700 hover:text-primary">
-            Contacto
+          <a
+            href="#portfolio"
+            className="flex items-center gap-2 font-medium text-gray-700 hover:text-primary"
+          >
+            💼 Portafolio
           </a>
           <a
-            href="https://github.com/chrishiotech/technical-portfolio"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#contact"
+            className="flex items-center gap-2 font-medium text-gray-700 hover:text-primary"
+          >
+            📧 Contacto
+          </a>
+          <a
+            href="#portfolio"
             className="rounded-lg bg-primary px-6 py-2 font-medium text-white transition hover:bg-primary-dark"
           >
-            Ver Proyectos
+            📂 Ver Proyectos
           </a>
         </div>
 
@@ -51,22 +55,20 @@ export default function Header() {
           <div className="space-y-4 px-6 py-4">
             <a
               href="#portfolio"
-              className="block py-2 font-medium text-gray-700 hover:text-primary"
+              className="flex items-center gap-2 py-2 font-medium text-gray-700 hover:text-primary"
               onClick={() => setIsMenuOpen(false)}
             >
-              Portafolio
+              📂 Portafolio
             </a>
             <a
               href="#contact"
-              className="block py-2 font-medium text-gray-700 hover:text-primary"
+              className="flex items-center gap-2 py-2 font-medium text-gray-700 hover:text-primary"
               onClick={() => setIsMenuOpen(false)}
             >
-              Contacto
+              📧 Contacto
             </a>
             <a
-              href="https://github.com/chrishiotech/technical-portfolio"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#portfolio"
               className="block rounded-lg bg-primary px-6 py-2 text-center font-medium text-white transition hover:bg-primary-dark"
               onClick={() => setIsMenuOpen(false)}
             >

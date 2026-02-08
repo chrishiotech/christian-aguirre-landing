@@ -4,67 +4,119 @@ export default function ProofPortfolio() {
   const projects = [
     {
       id: 1,
-      name: "Angular Enterprise Application",
+      name: "Technical Decision Framework",
       businessDescription:
-        "Sistema para empresas grandes que necesita crecer sin volverse lento - como modernizar la infraestructura interna de un banco.",
+        "Herramienta web interactiva para la toma de decisiones técnicas estratégicas con calculadora de ROI, diseñada para evitar errores arquitectónicos costosos.",
       technicalDescription:
-        "Aplicación empresarial con Angular 17, lazy-loaded modules, gestión de estado con NgRx, y testing pyramid completo (Jest + Cypress).",
-      tech: ["Angular 17", "NgRx", "Jest", "Cypress", "TypeScript Strict"],
+        "Framework interactivo construido con React, TypeScript y D3.js para visualización de árboles de decisión y análisis de trade-offs.",
+      tech: ["React", "TypeScript", "D3.js", "Tailwind CSS", "Vercel"],
       businessValue: [
-        "Escalabilidad garantizada",
-        "Mantenimiento predecible",
-        "Cumplimiento enterprise",
+        "Toma de decisiones basada en datos",
+        "Cálculo de ROI proyectado",
+        "Reducción de riesgo arquitectónico",
       ],
-      link: "https://github.com/chrishiotech/technical-portfolio/tree/main/01-angular-enterprise",
-      targetAudience: ["Empresas establecidas", "CTOs", "Arquitectos Enterprise"],
+      link: "https://07-technical-decision.vercel.app/",
+      targetAudience: ["CTOs", "Arquitectos de Software", "Engineering Managers"],
     },
     {
       id: 2,
-      name: "Next.js MicroFrontend Platform",
-      businessDescription:
-        "Plataforma modular que permite a múltiples equipos trabajar simultáneamente sin bloquearse - como construir una ciudad donde cada barrio se desarrolla independientemente.",
-      technicalDescription:
-        "Arquitectura MicroFrontend con Webpack 5 Module Federation, SSR/SSG, optimización de Core Web Vitals, y composición en runtime.",
-      tech: ["Next.js 14", "Webpack Module Federation", "TypeScript", "React 18"],
-      businessValue: ["Equipos independientes", "Releases frecuentes", "Reducción de riesgos"],
-      link: "https://github.com/chrishiotech/technical-portfolio/tree/main/02-nextjs-microfrontend",
-      targetAudience: ["Startups que escalan", "Tech Leads", "Empresas con múltiples equipos"],
-    },
-    {
-      id: 3,
-      name: "React Native Mobile App",
-      businessDescription:
-        "Aplicación móvil que funciona igual en iPhone y Android - una solución para empresas que necesitan llegar a clientes en cualquier dispositivo.",
-      technicalDescription:
-        "Aplicación nativa con React Native, arquitectura modular, gestión de estados complejos, y testing en dispositivos reales.",
-      tech: ["React Native", "TypeScript", "Expo", "Testing Library"],
-      businessValue: [
-        "Desarrollo 2x1 (iOS+Android)",
-        "Actualizaciones en tiempo real",
-        "Experiencia nativa",
-      ],
-      link: "https://github.com/chrishiotech/technical-portfolio/tree/main/03-react-native-app",
-      targetAudience: ["Startups mobile-first", "Product Managers", "Empresas con fuerza de campo"],
-    },
-    {
-      id: 4,
       name: "Low-Cost AI Automation Pipeline",
       businessDescription:
         "Automatización inteligente que reduce costos operativos hasta 60% - ideal para PYMEs que quieren IA sin el precio de Silicon Valley.",
       technicalDescription:
-        "Pipeline completo con DeepSeek API, backend FastAPI (Python), frontend HTMX, y comparativa de costos vs. OpenAI GPT-4.",
-      tech: ["Python", "DeepSeek API", "HTMX", "FastAPI", "Render"],
-      businessValue: [
-        "ROI en <2 meses",
-        "Costos predecibles",
-        "Sin dependencia de grandes proveedores",
-      ],
+        "Pipeline completo con DeepSeek/Minimax API, backend FastAPI (Python), frontend HTMX y comparativa de costos vs. OpenAI.",
+      tech: ["Python", "FastAPI", "DeepSeek API", "HTMX", "Render"],
+      businessValue: ["ROI en <2 meses", "Costos predecibles", "Ahorro 60% vs GPT-4"],
       link: "https://github.com/chrishiotech/technical-portfolio/tree/main/04-ai-automation",
-      targetAudience: [
-        "PYMEs latinoamericanas",
-        "Founders conscientes de costos",
-        "Empresas en mercados emergentes",
+      targetAudience: ["Founders conscientes de costos", "PYMEs LATAM", "CTOs"],
+    },
+    {
+      id: 3,
+      name: "Legacy Modernization Case Study",
+      businessDescription:
+        "Estrategia de migración de sistemas antiguos a arquitecturas modernas sin detener la operación, utilizando el patrón Strangler.",
+      technicalDescription:
+        "Implementación de Strangler Pattern y Module Federation con un dashboard de métricas de performance 'antes vs después'.",
+      tech: ["Strangler Pattern", "Module Federation", "React", "TypeScript"],
+      businessValue: [
+        "Migración sin tiempo de inactividad",
+        "Reducción de deuda técnica",
+        "Escalabilidad incremental",
       ],
+      link: "https://github.com/chrishiotech/technical-portfolio/tree/main/06-legacy-modernization",
+      targetAudience: ["Empresas Enterprise", "CTOs", "Product Owners"],
+    },
+    {
+      id: 4,
+      name: "Next.js MicroFrontend Platform",
+      businessDescription:
+        "Plataforma modular que permite a múltiples equipos trabajar simultáneamente sin bloquearse - ideal para escalar productos complejos.",
+      technicalDescription:
+        "Arquitectura MicroFrontend con Webpack 5 Module Federation, SSR/SSG y optimización de Core Web Vitals.",
+      tech: ["Next.js 14", "Webpack Federation", "TypeScript", "React 18"],
+      businessValue: ["Equipos independientes", "Releases frecuentes", "Performance optimizado"],
+      link: "https://github.com/chrishiotech/technical-portfolio/tree/main/02-nextjs-microfrontend",
+      targetAudience: ["Startups que escalan", "Tech Leads"],
+    },
+    {
+      id: 5,
+      name: "DevOps Self-Service Platform",
+      businessDescription:
+        "Portal que permite a los equipos generar infraestructura y pipelines de CI/CD con un clic, reduciendo el time-to-market drásticamente.",
+      technicalDescription:
+        "Plataforma automatizada usando Terraform/AWS CDK y GitHub Actions para la generación dinámica de entornos.",
+      tech: ["Terraform", "AWS CDK", "GitHub Actions", "Docker"],
+      businessValue: [
+        "Time-to-market acelerado",
+        "Estandarización de infra",
+        "Autonomía del equipo",
+      ],
+      link: "https://github.com/chrishiotech/technical-portfolio/tree/main/05-devops-self-service",
+      targetAudience: ["Startups", "DevOps Managers", "Engineering Leads"],
+    },
+    {
+      id: 6,
+      name: "Angular Enterprise Application",
+      businessDescription:
+        "Sistema robusto para entornos corporativos que necesita crecer sin volverse lento - como modernizar la infraestructura de un banco.",
+      technicalDescription:
+        "Aplicación empresarial con Angular 17, NgRx para gestión de estado, lazy-loading y testing completo (Jest + Cypress).",
+      tech: ["Angular 17", "NgRx", "RxJS", "Jest", "Cypress"],
+      businessValue: ["Escalabilidad garantizada", "Mantenimiento predecible", "Estándar bancario"],
+      link: "https://github.com/chrishiotech/technical-portfolio/tree/main/01-angular-enterprise",
+      targetAudience: ["Banca / FinTech", "Arquitectos Enterprise"],
+    },
+    {
+      id: 7,
+      name: "Developer Experience (DX) Dashboard",
+      businessDescription:
+        "Visualización en tiempo real de la salud del equipo de ingeniería mediante métricas DORA y optimización de tiempos de construcción.",
+      technicalDescription:
+        "Dashboard interactivo para recolección y visualización de métricas de productividad y retención técnica.",
+      tech: ["React", "TypeScript", "DORA Metrics", "Data Viz"],
+      businessValue: [
+        "Mejora de retención técnica",
+        "Visibilidad de cuellos de botella",
+        "Productividad optimizada",
+      ],
+      link: "https://github.com/chrishiotech/technical-portfolio/tree/main/08-dev-experience",
+      targetAudience: ["VPs of Engineering", "CTOs", "Team Leads"],
+    },
+    {
+      id: 8,
+      name: "React Native Mobile App",
+      businessDescription:
+        "Aplicación móvil que funciona en iPhone y Android - una solución para empresas que necesitan presencia en cualquier dispositivo.",
+      technicalDescription:
+        "Aplicación nativa con React Native, Expo y arquitectura modular para integración con APIs complejas.",
+      tech: ["React Native", "TypeScript", "Expo", "Testing Library"],
+      businessValue: [
+        "Desarrollo 2x1 (iOS+Android)",
+        "Actualizaciones OTA",
+        "Time-to-market móvil",
+      ],
+      link: "https://github.com/chrishiotech/technical-portfolio/tree/main/03-react-native-app",
+      targetAudience: ["Startups mobile-first", "Product Managers"],
     },
   ];
 
@@ -165,29 +217,37 @@ export default function ProofPortfolio() {
                   )}
                 </div>
 
-                {/* Enlace a GitHub */}
-                <div className="mt-4 border-t border-gray-100 pt-4">
+                {/* Enlace a Demo */}
+                <div className="mt-6 flex flex-wrap gap-4">
+                  {" "}
                   <a
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group inline-flex w-full items-center justify-between rounded-lg bg-gray-50 px-4 py-3 font-medium text-gray-700 transition-colors hover:bg-gray-100"
+                    className="inline-flex items-center rounded-full bg-primary px-6 py-3 font-medium text-white transition-all hover:bg-opacity-90 hover:shadow-lg active:scale-95"
                   >
-                    <span>Ver código en GitHub</span>
+                    {" "}
+                    <span>
+                      {" "}
+                      {project.link.includes("vercel.app")
+                        ? "🚀 Explorar Solución Live"
+                        : "📂 Revisar Arquitectura"}{" "}
+                    </span>{" "}
                     <svg
-                      className="ml-2 h-5 w-5 transform transition-transform group-hover:translate-x-1"
+                      className="ml-2 h-4 w-4"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
                     >
+                      {" "}
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        strokeWidth={2}
+                        strokeWidth="2"
                         d="M14 5l7 7m0 0l-7 7m7-7H3"
-                      />
-                    </svg>
-                  </a>
+                      />{" "}
+                    </svg>{" "}
+                  </a>{" "}
                 </div>
               </div>
             );
@@ -195,7 +255,7 @@ export default function ProofPortfolio() {
         </div>
 
         {/* CTA Principal */}
-        <div className="text-center">
+        {/* <div className="text-center">
           <div className="inline-block rounded-xl bg-gradient-to-r from-primary to-blue-600 p-1 shadow-lg">
             <a
               href="https://github.com/chrishiotech/technical-portfolio"
@@ -210,7 +270,7 @@ export default function ProofPortfolio() {
           <p className="mt-4 text-sm text-gray-500">
             Cada proyecto incluye código fuente, documentación técnica y guías de implementación
           </p>
-        </div>
+        </div> */}
 
         {/* Nota sobre el enfoque dual */}
         <div className="mt-16 rounded-2xl border border-blue-100 bg-gradient-to-r from-blue-50 to-indigo-50 p-6">
